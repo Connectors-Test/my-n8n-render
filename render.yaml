@@ -52,6 +52,10 @@ services:
           name: n8n-db
           property: user
 
+      # Set N8N to use the dynamic port assigned by Render
+      - key: N8N_PORT
+        value: $PORT
+
 databases:
   - name: n8n-db
     plan: free
